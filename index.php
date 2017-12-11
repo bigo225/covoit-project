@@ -16,13 +16,11 @@
 		
 			<div>
 			<?php 
-				echo '<input type="" name="" placeholder="depart">
-				<input type="" name="" placeholder="arrivé">
-				<input type="date" name="" placeholder="date du depart"><button type="">rechercher</button>
-				<a href="les_pages/connexion.php"><button  type="">connexion</button></a>
+				echo '<a href="les_pages/connexion.php"><button  type="">connexion</button></a>
 				<a href="les_pages/deconnexion.php"><button  type="">deconnexion</button></a>
 				<a href="les_pages/inscription.php"><button type="">inscription</button></a> 
-				<a href="les_pages/proposeTrajet.php"><button type="">Proposer un trajet</button></a> '; 
+				<a href="les_pages/rechercheTrajet.php"><button type="">rechercher un trajet</button></a>
+				<a href="les_pages/proposerTrajet.php"><button type="">Proposer un trajet</button></a> '; 
 
 				// on affiche l'option profil à condition qu'il ai eu connexion et donc qu'une adresse mail est été renseignée
 				if (isset($_SESSION['mail'])) { 

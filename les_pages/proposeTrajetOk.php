@@ -4,6 +4,12 @@
 	include ("../includes/fonctions.php");
 
 	//on recupère les valeurs
+	if (!isset($_SESSION['id'])) {
+		header('Location: ./connexion.php');
+
+	}
+
+
 	$id_personne = $_SESSION['id'];
 
 	//pour l'aller
